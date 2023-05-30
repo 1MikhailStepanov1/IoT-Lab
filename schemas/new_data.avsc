@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "NewData",
+  "fields": [
+    {"name": "_id", "type": "string"},
+    {"name": "firstname", "type": "string"},
+    {"name": "lastname", "type": "string"},
+    {"name": "age", "type": "long"},
+    {"name": "email", "type": "string"},
+    {"name": "sex", "type": "string"}
+  ]
+}

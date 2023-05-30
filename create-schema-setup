@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sleep 10 
+kafka-avro-console-producer --broker-list kafka:9092 --topic test.users --property value.schema='$(cat /schemas/old_data.avsc)' --property schema.registry.url=http://schema-registry:8081
+sleep 10
+kafka-avro-console-producer --broker-list kafka:9092 --topic test.users --property value.schema='$(cat /schemas/new_data.avsc)' --property schema.registry.url=http://schema-registry:8081
